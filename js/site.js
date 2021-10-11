@@ -107,7 +107,7 @@ function displayLoanIQ(payments, monthlyPayment, loanAmount){
     let tmPayment = document.getElementById("monthlyPayment");
     tmPayment.innerHTML = `${monthlyPayment.toFixed(2)}`;
     let totPrincipal = document.getElementById("totalPrincipal");
-    totPrincipal.innerHTML = `${loanAmount}`;
+    totPrincipal.innerHTML = `${parseFloat(loanAmount)}`;
     let totInterest = document.getElementById("totalInterest");
     totInterest.innerHTML = `${payments.totalInterest}`;
     let totCost = document.getElementById("totalCost");
